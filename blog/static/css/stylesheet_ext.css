@@ -1,0 +1,7 @@
+.w2panels_title_image {
+    display: inline-block;
+    *display: inline;
+    *zoom:1;width: 20px;
+    height: 25px;
+    background: url(https://smart.kisb.co.kr/uiplugin/accordion/images/icon1.gif) no-repeat center center
+}
