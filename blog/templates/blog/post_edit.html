@@ -1,9 +1,26 @@
 {% extends 'blog/base.html' %}
-
 {% block content %}
-    <h1>투자하기</h1>
-    <form method="POST" class="post-form">{% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">완료</button>
-    </form>
+<div class="content_wrap">
+    <div class="w2group cont_box pb0">
+        <div class="w2group tit_steps secondary">
+            <h3 class="w2textbox tit">신청서 작성</h3>
+        </div>
+        <div class="w2group list ty02 steps_gap">
+            <form method="POST">{% csrf_token %}
+                {{ form.as_p }}
+                
+                <div style="margin-top: 50px;" class="w2group bottom_wrap">
+                    <div class="w2group fixed_btns">
+                        <a class="w2anchor2 primary" type="submit">
+                            <button type="submit" style="color: #fff;margin: 10px;">신청하기</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+        
+    </div>      
+</div>  
+
 {% endblock %}
