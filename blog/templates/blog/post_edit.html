@@ -1,15 +1,29 @@
 {% extends 'blog/base.html' %}
+
 {% block content %}
-<div class="content_wrap">
-    <div class="w2group cont_box pb0">
+
         <div class="w2group tit_steps secondary">
-            <h3 class="w2textbox tit">신청서 작성</h3>
+            <h3 class="w2textbox tit" style="
+            background: #003150!important;
+            font-size: 1.125rem;
+            color: #fff;
+            position: static;
+            width: 100%;
+            left: 0;
+            top: 64px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 24px;
+            margin-bottom: 50px;">신청서 작성</h3>
         </div>
+
         <div class="w2group list ty02 steps_gap">
             <form method="POST">{% csrf_token %}
                 {{ form.as_p }}
                 
-                <div style="margin-top: 50px;" class="w2group bottom_wrap">
+                <div style="margin-top: 50px;" class="w2group bottom_wrap form_style">
                     <div class="w2group fixed_btns">
                         <a class="w2anchor2 primary" type="submit">
                             <button type="submit" style="color: #fff;margin: 10px;">신청하기</button>
@@ -19,8 +33,17 @@
                 
             </form>
         </div>
-        
-    </div>      
-</div>  
+        <script>
+            $(document).ready(function(){
+                alert("ready");
+            })
+        </script>
+        <style>
+            form, p{
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            
+        </style>
 
 {% endblock %}
