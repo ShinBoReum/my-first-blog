@@ -1,0 +1,122 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+    <div id="mf_wq_uuid_54" class="w2group plr24 pt32 bg_ff">
+        <h4 id="mf_wq_uuid_55" class="w2textbox sub_tit  pt0">
+            <a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
+        </h4>
+        <div id="mf_wq_uuid_56" class="w2group loan_list">
+            <ul id="mf_wq_uuid_57" class="w2group ">
+                <li id="mf_wq_uuid_58" class="w2group ">
+                    <a id="mf_wq_uuid_59" class="w2group " href="javascript:void(null);">
+                        <span id="mf_wq_uuid_60" class="w2group loan_cont">
+                            <strong id="mf_wq_uuid_61" class="w2textbox title">{{ post.thumb_nail }}</strong>
+                            <span id="mf_wq_uuid_62" class="w2textbox explanation">{{ post.thumb_nail_des }}</span>
+                        </span>
+                        <span id="mf_wq_uuid_63" class="w2group loan_ex">
+                            <span id="mf_wq_uuid_65" class="w2group percent">
+                                <strong id="mf_wq_uuid_66" class="w2textbox ">{{post.invest_rate}}</strong>
+                                <strong id="mf_wq_uuid_67" class="w2textbox "> %</strong>
+                            </span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <!-- <div class="w2group plr24 pt32 bg_ff">
+            <h4 class="w2textbox sub_tit  pt0"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h4>
+            <div>
+                <ul>
+                    <li>
+                        <span>
+                            {{ post.thumb_nail|linebreaksbr }}
+                        </span>
+                        <span>
+                            {{ post.thumb_nail|linebreaksbr }}
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            
+        </div> -->
+    {% endfor %}
+{% endblock %}
+<!-- <html>
+    <head>
+        <title>상품리스트</title>
+        <style type="text/css">
+            .main{
+                font-family: arial;
+                font-size: 24px;
+                margin: 25px;
+                width: 400px;
+                height: auto;
+
+            }
+        </style>
+    </head>
+    <body class="main">
+        <div>
+            <div>
+                <h1 style="text-align: center; ">투자상품</h1>
+            </div>
+
+            <div style="border: 5px solid; margin-bottom: 50px;">
+                <div style="margin: 50px;">
+                    <p style="text-align: right;">부동산 담보</p>
+                    <p><b>담보대출1호</b></p>
+                    <p><b>14.5%</b> / 3개월 / 부동산 담보</p>
+                    <p><span style="text-align: left;">총 모집액</span><span style="text-align:right;">투자 모집액</span></p>
+                    <p>bar~~~</p>
+                    <p style="text-align:right;">50%</p>
+                    <p style="font-size: 10px;">심의필 한투 2023.10.01 ~ 2023.12.01</p>
+                </div>
+            </div>
+
+           <div style="border: 5px solid; margin-bottom: 50px;">
+                <div style="margin: 50px;">
+                    <p style="text-align: right;">부동산 담보</p>
+                    <p><b>담보대출1호</b></p>
+                    <p><b>14.5%</b> / 3개월 / 부동산 담보</p>
+                    <p><span style="text-align: left;">총 모집액</span><span style="text-align:right;">투자 모집액</span></p>
+                    <p>bar~~~</p>
+                    <p style="text-align:right;">50%</p>
+                    <p style="font-size: 10px;">심의필 한투 2023.10.01 ~ 2023.12.01</p>
+                </div>
+            </div>
+
+            <div style="border: 5px solid; margin-bottom: 50px;">
+                <div style="margin: 50px;">
+                    <p style="text-align: right;">부동산 담보</p>
+                    <p><b>담보대출1호</b></p>
+                    <p><b>14.5%</b> / 3개월 / 부동산 담보</p>
+                    <p><span style="text-align: left;">총 모집액</span><span style="text-align:right;">투자 모집액</span></p>
+                    <p>bar~~~</p>
+                    <p style="text-align:right;">50%</p>
+                    <p style="font-size: 10px;">심의필 한투 2023.10.01 ~ 2023.12.01</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+
+    <div class="post">
+            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+            <div>
+                <ul>
+                    <li>
+                        <span>
+                            {{ post.thumb_nail|linebreaksbr }}
+                        </span>
+                        <span>
+                            {{ post.thumb_nail|linebreaksbr }}
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+</html> -->
