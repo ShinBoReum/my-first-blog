@@ -1142,7 +1142,7 @@ a.account {border-bottom:1px solid #222; color: #222;}
 
 /* content_wrap */
 .content_wrap{background:transparent; overflow-y: auto; height:100%; position:relative;}
-.content_wrap>*:first-child{padding-top: 64px}
+.content_wrap>*:first-child{padding-top: 0px}
 .content_wrap>*:first-child>.ud_line{padding: 32px 24px 24px;}
 .content_wrap>*:first-child>.ud_line .par{color: #222222;}
 .content_wrap>*:first-child>.ud_line .par strong{font-size: 1rem;}
@@ -1152,7 +1152,7 @@ a.account {border-bottom:1px solid #222; color: #222;}
 .content_wrap .cont_box{height:100%; overflow-y: auto; padding-bottom: 20px;}
 .content_wrap .cont_box.secondary {background-color:#003150!important;}
 .content_wrap .cont_box.bg_ty01{background: #F9F9F9;}
-.content_wrap .cont_box .tit_steps{position: fixed; width: 100%; left: 0; top: 64px; z-index: 1000; display:flex; align-items: center; justify-content: space-between; padding: 16px 24px;}
+.content_wrap .cont_box .tit_steps{position: static; width: 100%; left: 0; top: 64px; z-index: 1000; display:flex; align-items: center; justify-content: space-between; padding: 16px 24px;}
 .content_wrap .cont_box .tit_steps.secondary{background: #003150!important;}
 .content_wrap .cont_box .tit_steps.no_fixed{position: initial;}
 .content_wrap .cont_box .tit_steps .tit{font-size:1.125rem; color: #fff;}
@@ -1865,7 +1865,6 @@ a.account {border-bottom:1px solid #222; color: #222;}
 .list_card a div{display: flex; justify-content: space-between;}
 .list_card_content div{padding-bottom: 8px;}
 .list_card_content div:last-child{padding-bottom: 0;}
-
 /* 20230425 중지좌 추가 */
 .stop_acc_box{box-shadow: 0 0 6px 3px rgba(220, 220, 220, 0.4); border-radius:25px; box-sizing:border-box; margin-top: 16px; margin-bottom: 20px;}
 .stop_acc_box.border_solid{box-shadow: none; border: solid 1px #d2d2d2;}
